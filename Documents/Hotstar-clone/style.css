@@ -1,0 +1,42 @@
+body {
+  margin: 20px;
+}
+
+.container > div > img {
+  height: 300px;
+  min-width: 100px;
+  border-radius: 10px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+/* Flex */
+.flex-layout {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+/* Grid */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.grid-layout > div:first-child {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.grid-layout > div:nth-child(3){
+    grid-column-start: 3;
+    grid-column-end: 4; 
+}
+
+.grid-layout > div:nth-child(4){
+    grid-column: 4 / 5;
+    grid-row: 2 / 2;
+}
